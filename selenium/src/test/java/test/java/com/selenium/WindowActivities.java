@@ -12,8 +12,9 @@ public class locators {
 
 		driver.get("https://google.com"); //pause until page is fully loaded
 		driver.navigate().to("https://rahulshettyacademy.com/AutomationPractice/"); //will not wait
+		driver.navigate().back();
+driver.navigate().forward();
 
-		
 
 	
 	
