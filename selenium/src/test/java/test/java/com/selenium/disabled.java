@@ -15,12 +15,30 @@ public class disabled {
 		driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).click();
 		Assert.assertTrue(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
 		Thread.sleep(2000);
-		System.out.println(driver.findElement(By.id("ctl00_mainContent_view_date2")).isEnabled());
+		boolean contain = (driver.findElement(By.id("Div1")).getAttribute("style").contains("0.5"));
+		if (contain) {
+			System.out.println(
+					"its disabled");
+			Assert.assertTrue(true);
+		} else {
+			System.out.println("its enabled");
+			Assert.assertTrue(false);
+		}
+		System.out.println(driver.findElement(By.id("Div1")).getAttribute("style"));
 		driver.findElement(By.id("ctl00_mainContent_rbtnl_Trip_1")).click();
-		Thread.sleep(3000);
-			System.out.println(driver.findElement(By.id("ctl00_mainContent_view_date2")).isEnabled());
-
-
+		//	System.out.println(driver.findElement(By.id("ctl00_mainContent_view_date2")).isEnabled());
+		contain = (driver.findElement(By.id("Div1")).getAttribute("style").contains("1"));	
+		if (contain) {
+			System.out.println(
+		"its enabled"
+			);
+		Assert.assertTrue(true);
+	} else {
+		System.out.println("its disabled");
+		Assert.assertTrue(false);
+	}
+		
+		
 		//common to all checkboxes - get comman locator and make sure all are selected
 	
 		int size = (driver.findElements(By.cssSelector("input[type='checkbox']")).size());
