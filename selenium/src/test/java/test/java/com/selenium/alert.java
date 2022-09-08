@@ -12,11 +12,21 @@ public class alert {
 
 		driver.get("https://rahulshettyacademy.com/AutomationPractice/");
 
-		driver.findElement(By.id("name")).sendKeys("Hello");
+		String text = "HELLO";
+		driver.findElement(By.id("name")).sendKeys(text);
 		driver.findElement(By.id("alertbtn")).click();
+	
+		System.out.println(driver.switchTo().alert().getText());
+	
 		driver.switchTo().alert().accept();
+
+		driver.findElement(By.id("confirmbtn")).click();
+		System.out.println(driver.switchTo().alert().getText());
+		driver.switchTo().alert().dismiss();
+
 		
 
+driver.close();
 
 
 
