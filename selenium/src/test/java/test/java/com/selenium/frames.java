@@ -20,7 +20,7 @@ WebElement drag = driver.findElement(By.id("draggable"));
 WebElement drop = driver.findElement(By.id("droppable"));
 Actions a = new Actions(driver);
 a.dragAndDrop(drag, drop).build().perform();
-		
+driver.switchTo().defaultContent();
 
 driver.close();
 
