@@ -11,7 +11,9 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class windowHandles {
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "selenium/target/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/target/chromedriver.exe");
+
+		//target\chromedriver.exe
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 

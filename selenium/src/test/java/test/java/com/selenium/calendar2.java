@@ -1,15 +1,12 @@
 package test.java.com.selenium;
 
-import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class calendar2 {
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "selenium/target/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "/selenium/target/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		//driver.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
@@ -22,7 +19,7 @@ public class calendar2 {
 			driver.findElement(By.cssSelector("[class='datepicker-days'] th[class='next']")).click();
 		}
 
-		List<WebElement> dates = driver.findElements(By.className("day"));
+		//List<WebElement> dates = driver.findElements(By.className("day"));
 		// Grab common attribute//Put into list and iterate
 		int count = driver.findElements(By.className("day")).size();
 
