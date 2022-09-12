@@ -1,15 +1,20 @@
 package test.java.com.selenium;
 
+import java.io.File;
+import java.io.IOException;
 import java.util.Iterator;
 import java.util.Set;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class newWindow {
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException, IOException {
 System.setProperty("webdriver.chrome.driver", "C:\\Users\\azima.keshwani\\Desktop\\selenium\\selenium\\target\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
@@ -26,7 +31,13 @@ String courseName = driver.findElements(By.cssSelector("a[href*='https://courses
 System.out.println(courseName);
 
 driver.switchTo().window(parentWindow);
-driver.findElement(By.name("name")).sendKeys(courseName);
+WebElement name = driver.findElement(By.name("name"));
+name.sendKeys(courseName);
+File filename = name.getScreenshotAs(OutputType.FILE);
+FileUtils.copyFile(filename,  new File("logo.png"));
+
+System.out.println(name.getRect().getDimension().getHeight()); //to get height
+System.out.println(name.getRect().getDimension().getWidth()); //to get widhth
 
 
 driver.close();
