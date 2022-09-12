@@ -18,31 +18,31 @@ System.setProperty("webdriver.chrome.driver", "C:\\Users\\azima.keshwani\\Deskto
 		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/offers");
 
 driver.findElement(By.xpath("//tr/th[1]")).click();
-List<WebElement> elementsList = driver.findElements(By.xpath("//tr/th[1]"));
+List<WebElement> elementsList = driver.findElements(By.xpath("//tr/td[1]"));
+System.out.println("Elements List " + elementsList);
 	
 List<String> originalList = elementsList.stream().map(s->s.getText()).collect(Collectors.toList());
 		List<String> sortedList = originalList.stream().sorted().collect(Collectors.toList());
-		
-		elementsList.stream().sorted().collect(Collectors.toList());
+		System.out.println("Sorted List " + sortedList);
 
 Assert.assertTrue(originalList.equals(sortedList));
 
 //Scan vegetable name column with getText -> Rice -> Print price of vegetable
 
 List<String> price = elementsList.stream().filter(s-> s.getText().contains("Beans")).map(s-> getPriceVeggie(s)).collect(Collectors.toList());
-price.forEach(s->System.out.println(s));
+price.forEach(a->System.out.println("Price for Beans $" + a));
 
 	}
 
 	private static String getPriceVeggie(WebElement s){
-		s.findElement(By.xpath("following-sibling::td[1]")).getText();
-		return null;
+		String pricevalue = s.findElement(By.xpath("following-sibling::td[1]")).getText();
+		return pricevalue;
+// 	}
+
+
+
+
+
 	}
-
-
-
-
-
-
 	
 }
