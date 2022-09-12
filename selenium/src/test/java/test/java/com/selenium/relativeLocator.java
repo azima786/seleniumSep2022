@@ -1,11 +1,11 @@
 package test.java.com.selenium;
 
+import static org.openqa.selenium.support.locators.RelativeLocator.with;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import static org.openqa.selenium.support.locators.RelativeLocator.*;
-import static org.openqa.selenium.support.RelativeLocator.*;
 
 public class relativeLocator {
 	public static void main(String[] args) throws InterruptedException {
@@ -21,8 +21,8 @@ WebElement radioButton =driver.findElement(By.id("inlineRadio1"));
 
 
 System.out.println(driver.findElement(with(By.tagName("label")).above(nameEditBox)).getText());
-System.out.println(driver.findElement(with(By.tagName("input")).below(dateOfBirth)).click()); //- Relative locator do not identify flex
-System.out.println(driver.findElement(with(By.tagName("input")).toLeftOf(iceCreamLocator)).click()); 
+driver.findElement(with(By.tagName("input")).below(dateOfBirth)).click(); //- Relative locator do not identify flex
+driver.findElement(with(By.tagName("input")).toLeftOf(iceCreamLocator)).click(); 
 System.out.println(driver.findElement(with(By.tagName("label")).toRightOf(radioButton)).getText()); 
 
 
