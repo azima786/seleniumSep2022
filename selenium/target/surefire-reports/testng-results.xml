@@ -1,21 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="4" total="9" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-13T09:13:33 CDT" name="suite" finished-at="2022-09-13T09:13:33 CDT" duration-ms="30">
+  <suite started-at="2022-09-13T10:54:59 CDT" name="suite" finished-at="2022-09-13T10:54:59 CDT" duration-ms="28">
     <groups>
     </groups>
-    <test started-at="2022-09-13T09:13:33 CDT" name="Test" finished-at="2022-09-13T09:13:33 CDT" duration-ms="30">
+    <test started-at="2022-09-13T10:54:59 CDT" name="Regression" finished-at="2022-09-13T10:54:59 CDT" duration-ms="28">
       <class name="test.java.com.TestNG.day1">
-        <test-method signature="name()[pri:0, instance:test.java.com.TestNG.day1@66f0589c]" started-at="2022-09-13T09:13:33 CDT" name="name" finished-at="2022-09-13T09:13:33 CDT" duration-ms="5" status="PASS">
+        <test-method signature="name5()[pri:0, instance:test.java.com.TestNG.day1@af7251de]" started-at="2022-09-13T10:54:59 CDT" name="name5" finished-at="2022-09-13T10:54:59 CDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- name5 -->
+        <test-method signature="name3()[pri:0, instance:test.java.com.TestNG.day1@af7251de]" started-at="2022-09-13T10:54:59 CDT" name="name3" finished-at="2022-09-13T10:54:59 CDT" depends-on-methods="test.java.com.TestNG.day1.name5" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- name3 -->
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:test.java.com.TestNG.day1@af7251de]" started-at="2022-09-13T10:54:59 CDT" name="afterSuite" finished-at="2022-09-13T10:54:59 CDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- test.java.com.TestNG.day1 -->
+      <class name="test.java.com.TestNG.day2">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:test.java.com.TestNG.day2@aec2e3b2]" started-at="2022-09-13T10:54:59 CDT" name="afterSuite" finished-at="2022-09-13T10:54:59 CDT" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+        <test-method is-config="true" signature="BeforeClass()[pri:0, instance:test.java.com.TestNG.day2@aec2e3b2]" started-at="2022-09-13T10:54:59 CDT" name="BeforeClass" finished-at="2022-09-13T10:54:59 CDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeClass -->
+        <test-method signature="name()[pri:0, instance:test.java.com.TestNG.day2@aec2e3b2]" started-at="2022-09-13T10:54:59 CDT" name="name" finished-at="2022-09-13T10:54:59 CDT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- name -->
-        <test-method signature="name2()[pri:0, instance:test.java.com.TestNG.day1@66f0589c]" started-at="2022-09-13T09:13:33 CDT" name="name2" finished-at="2022-09-13T09:13:33 CDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="prerequest()[pri:0, instance:test.java.com.TestNG.day2@aec2e3b2]" started-at="2022-09-13T10:54:59 CDT" name="prerequest" finished-at="2022-09-13T10:54:59 CDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prerequest -->
+        <test-method is-config="true" signature="prerequest()[pri:0, instance:test.java.com.TestNG.day2@aec2e3b2]" started-at="2022-09-13T10:54:59 CDT" name="prerequest" finished-at="2022-09-13T10:54:59 CDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prerequest -->
+        <test-method is-config="true" signature="prerequest()[pri:0, instance:test.java.com.TestNG.day2@aec2e3b2]" started-at="2022-09-13T10:54:59 CDT" name="prerequest" finished-at="2022-09-13T10:54:59 CDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prerequest -->
+        <test-method signature="name2()[pri:0, instance:test.java.com.TestNG.day2@aec2e3b2]" started-at="2022-09-13T10:54:59 CDT" name="name2" finished-at="2022-09-13T10:54:59 CDT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- name2 -->
-      </class> <!-- test.java.com.TestNG.day1 -->
-    </test> <!-- Test -->
+        <test-method signature="name3()[pri:0, instance:test.java.com.TestNG.day2@aec2e3b2]" started-at="2022-09-13T10:54:59 CDT" name="name3" finished-at="2022-09-13T10:54:59 CDT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- name3 -->
+        <test-method is-config="true" signature="AfterTest()[pri:0, instance:test.java.com.TestNG.day2@aec2e3b2]" started-at="2022-09-13T10:54:59 CDT" name="AfterTest" finished-at="2022-09-13T10:54:59 CDT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- test.java.com.TestNG.day2 -->
+    </test> <!-- Regression -->
   </suite> <!-- suite -->
 </testng-results>

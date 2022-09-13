@@ -112,7 +112,7 @@
         <version>3.0.0-M7</version>
         <configuration>
           <suiteXmlFiles>
-            <suiteXmlFile>C:\Users\azima.keshwani\Desktop\selenium\selenium\src\testng.xml</suiteXmlFile>
+            <suiteXmlFile>C:\Users\azima.keshwani\Desktop\selenium\selenium\src\testng2.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>
