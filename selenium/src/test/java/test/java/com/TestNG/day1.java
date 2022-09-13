@@ -25,7 +25,7 @@ public void name4() {
     System.out.println("I am smoke");
 }
 
-@Test
+@Test(timeOut = 4000)
 public void name5() {
     System.out.println("I am name5");
 }
