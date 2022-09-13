@@ -28,6 +28,7 @@ public void name2(String username, String password) {
 @Test
 public void name3() {
     System.out.println("HELLO3");
+    
 }
 
 @Test(groups={"smoke"})
