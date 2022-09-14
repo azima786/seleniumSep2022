@@ -1,4 +1,4 @@
-package test.java.economics;
+
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -18,12 +18,11 @@ import pageObjectModel.paymentMethod;
 public class submitTest {
 
     public static void main(String[] args) {
+        String productName = "ZARA COAT 3";
+        
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
-
-        String productName = "ZARA COAT 3";
         driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-        
         LandingPage landing = new LandingPage(driver);
        
 
