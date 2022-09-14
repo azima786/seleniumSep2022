@@ -25,14 +25,14 @@
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
-    <version>4.1.2</version>
+    <version>4.3.0</version>
 </dependency>
 
 <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 <dependency>
     <groupId>io.github.bonigarcia</groupId>
     <artifactId>webdrivermanager</artifactId>
-    <version>3.8.1</version>
+    <version>5.2.1</version>
 </dependency>
 <!-- https://mvnrepository.com/artifact/org.testng/testng -->
 <dependency>
@@ -120,20 +120,4 @@
     </pluginManagement>
   </build>
 
-
-  <dependencyManagement>
-  
-
-    <dependencies>
-    
-
-      <dependency>
-        <groupId>com.beust</groupId>
-        <artifactId>jcommander</artifactId>
-        <version>1.82</version>
-      </dependency>
-
-    </dependencies>
-
-  </dependencyManagement>
 </project>
